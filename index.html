@@ -7,19 +7,75 @@
 <body>
     <form name="cross_fomr">
 
-        <h1>Entre em contato</h1>
-      
-        <input type="text" id="nomeid" placeholder="Tiago Vale" required="required" name="nome" />
-        <label for="nome">Nome</label>
-      
-        <input type="tel" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" />
+        <h1>Inscrissão para o campeonato de CrossFit</h1>
+
+    <div class="dadosp">
+        <h2> Dados Pessoais</h2>
+
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nomeid" placeholder="Digite seu nome" required="required" name="nome" />
+        
         <label for="fone">Fone</label>
-      
+        <input type="tel" id="foneid" placeholder="(xx)9 xxxx-xxxx" name="fone" />
+        
+        <label for="email">E-mail</label>
         <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
-        <label for="email">Email</label>
-      
-        <textarea placeholder="Deixe sua opnião"></textarea>
-      
+        
+        <label for="datadenascimento">Data de nascimeto</label>
+        <input type="datadenascimento" id="datadenascimentoid" placeholder="xx/xx/xxxx" name="Data de nascimento" />
+
+        <label for="endereco">Endereço</label>
+        <input type="endereco" id="enderecoid" placeholder="cidade:xxx, rua:xxx, bairro:xxx, num:xxx" name="endereco" />
+
+        <label for="cpf">CPF</label>
+        <input type="cpf" id="cpfid" placeholder="xxx.xxx.xxx.xx" name="cpf" />
+
+        <label for="cep">CEP</label>
+        <input type="cep" id="cepid" placeholder="xxxxx-xxx" name="cep" />
+
+        <label for="genero">Como você se indentifica?</label>
+        <input type="genero" id="generoid" placeholder="Homem/Mulher/Terian?..." name="genero" />
+
+        <label for="idade">Você é menor de iade?</label>
+        <input type="idade" id="idadeid" placeholder="Se sim, quantos anos você tem?" name="idade" />
+
+        <label for="menoridade">Nome do seu responsável?(Caso seja menor de iade)</label>
+        <input type="menoridade" id="menoridadeid" placeholder="Digite..." name="menoridade" />
+    </div>
+
+    <div class="saude">
+        <h2>Informações de Saúde</h2>
+
+        <label for="lesao">Tem alguma lesão?</label>
+        <input type="lesao" id="lesaoid" placeholder="Sim/Não" name="lesao" />
+
+        <label for="remedio">Toma algum tipo de remedio?</label>
+        <input type="remedio" id="remedioid" placeholder="Sim/Não" name="remedio" />
+
+        <label for="limitacao">Tem alguma limitação física?</label>
+        <input type="limitacao" id="limitacaoid" placeholder="Sim/Não" name="limitacao" />
+
+        <label for="sanguineo">Qual o seu tipo sanguíneo?</label>
+        <input type="sanguineo" id="sanguineoid" placeholder="Digite..." name="sanguineo" />
+        
+    </div>
+
+    <div class="treino">
+        <h2>Informações de Treino</h2>
+
+        <label for="experiencia">Qual o seu nível de experiência?</label>
+        <input type="experiencia" id="experienciaid" placeholder="Iniciante/Intermediário/RX" name="experiencia" />
+
+        <label for="treina">A quanto tempo você treina?</label>
+        <input type="treina" id="treinaid" placeholder="x anos." name="treina" />
+
+        <label for="competicao">Você está apto a participar da competição?</label>
+        <input type="competicao" id="competicaoid" placeholder="Sim/NãoS" name="competicao" />
+
+        <label for="categoria">Qual categoria gostaria de competir?</label>
+        <input type="categoria" id="categoriaid" placeholder="Iniciante/Intermediário/Teen/Master/RX/Elite" name="categoria" />
+        
+    </div>
         <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
       </form>
 </body>
