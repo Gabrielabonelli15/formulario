@@ -33,25 +33,29 @@
         <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
         <br>
         <label for="datadenascimento">Data de nascimeto</label>
-        <input type="datadenascimento" id="datadenascimentoid" placeholder="xx/xx/xxxx" name="Data de nascimento" />
+        <input type="text" id="datadenascimentoid" placeholder="xx/xx/xxxx" name="Data de nascimento" />
         <br>
         <label for="endereco">Endereço</label>
-        <input type="endereco" id="enderecoid" placeholder="cidade:xxx, rua:xxx, bairro:xxx, num:xxx" name="endereco" />
+        <input type="text" id="enderecoid" placeholder="cidade:xxx, rua:xxx, bairro:xxx, num:xxx" name="endereco" />
         <br>
         <label for="cpf">CPF</label>
         <input type="cpf" id="cpfid" placeholder="xxx.xxx.xxx.xx" name="cpf" />
         <br>
         <label for="cep">CEP</label>
-        <input type="cep" id="cepid" placeholder="xxxxx-xxx" name="cep" />
+        <input type="text" id="cepid" placeholder="xxxxx-xxx" name="cep" />
         <br>
         <label for="genero">Como você se indentifica?</label>
-        <input type="genero" id="generoid" placeholder="Homem/Mulher/Terian?..." name="genero" />
+        <input type="text" id="generoid" placeholder="Homem/Mulher/Terian?..." name="genero" />
         <br>
         <label for="idade">Você é menor de iade?</label>
-        <input type="idade" id="idadeid" placeholder="Se sim, quantos anos você tem?" name="idade" />
+        <label for="">
+            <button class="btn sim" onclick="respostaSim()">Sim</button>
+            <button class="btn nao" onclick="respostaNao()">Não</button>
+        </label>
+        <input type="text" id="idadeid" placeholder="Se sim, quantos anos você tem?" name="idade" />
         <br>
         <label for="menoridade">Nome do seu responsável?(Caso seja menor de iade)</label>
-        <input type="menoridade" id="menoridadeid" placeholder="Digite..." name="menoridade" />
+        <input type="text" id="menoridadeid" placeholder="Digite..." name="menoridade" />
     </fieldset>
      </div>
     </section>
@@ -64,15 +68,22 @@
 
         <fieldset>
             <label for="lesaoid">Tem alguma lesão?</label>
-            <input type="text" id="lesaoid" placeholder="Sim/Não" name="lesao" />
+            <label for="">
+                <button class="btn sim" onclick="respostaSim()">Sim</button>
+                <button class="btn nao" onclick="respostaNao()">Não</button>
+            </label>
             <br>
         
             <label for="remedioid">Toma algum tipo de remédio?</label>
-            <input type="text" id="remedioid" placeholder="Sim/Não" name="remedio" />
+            <label for="">
+                <button class="btn sim" onclick="respostaSim()">Sim</button>
+                <button class="btn nao" onclick="respostaNao()">Não</button>
+            </label>
             <br>
         
             <label for="limitacaoid">Tem alguma limitação física?</label>
-            <input type="text" id="limitacaoid" placeholder="Sim/Não" name="limitacao" />
+            <button class="btn sim" onclick="respostaSim()">Sim</button>
+            <button class="btn nao" onclick="respostaNao()">Não</button>
             <br>
         
             <label for="sanguineoid">Tipo sanguíneo</label>
@@ -82,59 +93,80 @@
     </section>  
 
 
-    
+
     <section>
         
      <div id="treino">
         <h2>Informações de Treino</h2>
         <fieldset>
         <label for="experiencia">Qual o seu nível de experiência?</label>
-        <input type="experiencia" id="experienciaid" placeholder="Iniciante/Intermediário/RX" name="experiencia" />
+        <input type="text" id="experienciaid" placeholder="Iniciante/Intermediário/RX" name="experiencia" />
         <br>
         <label for="treina">A quanto tempo você treina?</label>
-        <input type="treina" id="treinaid" placeholder="x anos." name="treina" />
+        <input type="text" id="treinaid" placeholder="x anos." name="treina" />
         <br>
         <label for="competicao">Você está apto a participar da competição?</label>
-        <input type="competicao" id="competicaoid" placeholder="Sim/Não" name="competicao" />
+        <label for="">
+            <button class="btn sim" onclick="respostaSim()">Sim</button>
+            <button class="btn nao" onclick="respostaNao()">Não</button>
+        </label>
         <br>
         <label for="categoria">Qual categoria gostaria de competir?</label>
         <input type="categoria" id="categoriaid" placeholder="Iniciante/Intermediário/Teen/Master/RX/Elite" name="categoria" />
         <br>
         <label for="atencao">Possui alguma condição de saúde que exija atenção especial durante o evento?</label>
-        <input type="atencao" id="atencaoid" placeholder="Sim/Não" name="atencao" />
+        <label for="">
+            <button class="btn sim" onclick="respostaSim()">Sim</button>
+            <button class="btn nao" onclick="respostaNao()">Não</button>
+        </label>
         <br>
         <label for="esforco">Está ciente de que o evento exige esforço físico intenso e assume total responsabilidade pela sua participação?</label>
-        <input type="esforco" id="esforcoid" placeholder="Sim/Não" name="esforco" />
+        <label for="">
+            <button class="btn sim" onclick="respostaSim()">Sim</button>
+            <button class="btn nao" onclick="respostaNao()">Não</button>
+        </label>
         <br>
         <label for="midia">Autoriza o uso de sua imagem para divulgação nas redes sociais e mídias do evento? </label>
-        <input type="midia" id="midiaid" placeholder="Sim/Não" name="midia" />
+        <label for="">
+            <button class="btn sim" onclick="respostaSim()">Sim</button>
+            <button class="btn nao" onclick="respostaNao()">Não</button>
+        </label>
         <br>
         <label for="objeto">Está ciente de que a organização do evento não se responsabiliza por objetos pessoais perdidos ou extraviados?</label>
-        <input type="objeto" id="objetoid" placeholder="Sim/Não" name="objeto" />
+        <label for="">
+            <button class="btn sim" onclick="respostaSim()">Sim</button>
+            <button class="btn nao" onclick="respostaNao()">Não</button>
+        </label>
         <br>
         <label for="outros">Já participou de outros campeonatos de CrossFit? Se sim, quais?</label>
-        <input type="outros" id="outrosid" placeholder="Digite..." name="outros"/>
+        <input type="text" id="outrosid" placeholder="Digite..." name="outros"/>
         <br>
         <label for="eouind">Compete individualmente ou em equipe?</label>
-        <input type="eouind" id="eouindid" placeholder="Digite..." name="eouind"/>
+        <input type="text" id="eouindid" placeholder="Digite..." name="eouind"/>
         <br>
         <label for="nequipe">Nome da equipe (se for em dupla ou trio):</label>
-        <input type="nequipe" id="nequipeid" placeholder="Digite..." name="nequipe"/>
+        <input type="text" id="nequipeid" placeholder="Digite..." name="nequipe"/>
         <br>
         <label for="camisa">Tamanho da camiseta do evento: (PP, P, M, G, GG, XG)</label>
-        <input type="camisa" id="camisaid" placeholder="Digite..." name="camisa"/>
+        <input type="text" id="camisaid" placeholder="Digite..." name="camisa"/>
         <br>
         <label for="hotel">Você precisa de hospedagem?</label>
-        <input type="hotel" id="hotelid" placeholder="Sim/Não" name="hotel"/>
+        <label for="">
+            <button class="btn sim" onclick="respostaSim()">Sim</button>
+            <button class="btn nao" onclick="respostaNao()">Não</button>
+        </label>
         <br>
         <label for="como">Como ficou sabendo do campeonato? (Instagram, indicação, site, outro)</label>
-        <input type="como" id="comoid" placeholder="Digite..." name="como"/>
+        <input type="text" id="comoid" placeholder="Digite..." name="como"/>
         <br>
         <label for="gostaria">Gostaria de receber novidades sobre outros eventos futuros?</label>
-        <input type="gostaria" id="gostariaid" placeholder="Sima/Não" name="gostaria"/>
+        <label for="">
+            <button class="btn sim" onclick="respostaSim()">Sim</button>
+            <button class="btn nao" onclick="respostaNao()">Não</button>
+        </label>
         <br>
         <label for="observacao">Alguma observação adicional que gostaria de deixar para a organização?</label>
-        <input type="observacao" id="observacaoid" placeholder="Digite..." name="observacao"/>
+        <input type="text" id="observacaoid" placeholder="Digite..." name="observacao"/>
         <br>
     </fieldset>
      </div>
