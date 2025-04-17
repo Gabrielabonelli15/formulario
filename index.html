@@ -19,9 +19,10 @@
 <Main>
   <form name="cross_fomr">
     <section>
+
       <div id="dadosp">
         <h2> Dados Pessoais</h2>
-
+    <fieldset>
         <label for="nome">Nome Completo</label>
         <input type="text" id="nomeid" placeholder="Digite seu nome" required="required" name="nome" />
         <br>
@@ -51,32 +52,42 @@
         <br>
         <label for="menoridade">Nome do seu responsável?(Caso seja menor de iade)</label>
         <input type="menoridade" id="menoridadeid" placeholder="Digite..." name="menoridade" />
+    </fieldset>
      </div>
     </section>
+
+
 
     <section>
      <div id="saude">
         <h2>Informações de Saúde</h2>
 
-        <label for="lesao">Tem alguma lesão?</label>
-        <input type="lesao" id="lesaoid" placeholder="Sim/Não" name="lesao" />
-        <br>
-        <label for="remedio">Toma algum tipo de remedio?</label>
-        <input type="remedio" id="remedioid" placeholder="Sim/Não" name="remedio" />
-        <br>
-        <label for="limitacao">Tem alguma limitação física?</label>
-        <input type="limitacao" id="limitacaoid" placeholder="Sim/Não" name="limitacao" />
-        <br>
-        <label for="sanguineo">Qual o seu tipo sanguíneo?</label>
-        <input type="sanguineo" id="sanguineoid" placeholder="Digite..." name="sanguineo" />
-    </section> 
-     </div>
+        <fieldset>
+            <label for="lesaoid">Tem alguma lesão?</label>
+            <input type="text" id="lesaoid" placeholder="Sim/Não" name="lesao" />
+            <br>
+        
+            <label for="remedioid">Toma algum tipo de remédio?</label>
+            <input type="text" id="remedioid" placeholder="Sim/Não" name="remedio" />
+            <br>
+        
+            <label for="limitacaoid">Tem alguma limitação física?</label>
+            <input type="text" id="limitacaoid" placeholder="Sim/Não" name="limitacao" />
+            <br>
+        
+            <label for="sanguineoid">Tipo sanguíneo</label>
+            <input type="text" id="sanguineoid" placeholder="Digite..." name="sanguineo" />
+        </fieldset>
+    </div>   
+    </section>  
 
 
+    
     <section>
+        
      <div id="treino">
         <h2>Informações de Treino</h2>
-
+        <fieldset>
         <label for="experiencia">Qual o seu nível de experiência?</label>
         <input type="experiencia" id="experienciaid" placeholder="Iniciante/Intermediário/RX" name="experiencia" />
         <br>
@@ -125,13 +136,18 @@
         <label for="observacao">Alguma observação adicional que gostaria de deixar para a organização?</label>
         <input type="observacao" id="observacaoid" placeholder="Digite..." name="observacao"/>
         <br>
+    </fieldset>
      </div>
     </section>
-        <div id="botao">
-        <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
-        </div>
-  </form>
-</Main>
 
+    <div id="botao">
+        <fieldset>
+        <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+        </fieldset>
+    </div>
+
+  </form>
+
+</Main>
 </body>
 </html>
