@@ -3,13 +3,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <form name="cross_fomr">
 
+    <header>
+
+    <div id="navbar">
         <h1>Inscrissão para o campeonato de CrossFit</h1>
+    </div>
 
-    <div class="dadosp">
+    </header>   
+
+<Main>
+  <form name="cross_fomr">
+    <section>
+      <div id="dadosp">
         <h2> Dados Pessoais</h2>
 
         <label for="nome">Nome Completo</label>
@@ -41,9 +51,11 @@
         <br>
         <label for="menoridade">Nome do seu responsável?(Caso seja menor de iade)</label>
         <input type="menoridade" id="menoridadeid" placeholder="Digite..." name="menoridade" />
-    </div>
+     </div>
+    </section>
 
-    <div class="saude">
+    <section>
+     <div id="saude">
         <h2>Informações de Saúde</h2>
 
         <label for="lesao">Tem alguma lesão?</label>
@@ -57,10 +69,12 @@
         <br>
         <label for="sanguineo">Qual o seu tipo sanguíneo?</label>
         <input type="sanguineo" id="sanguineoid" placeholder="Digite..." name="sanguineo" />
-        
-    </div>
+    </section> 
+     </div>
 
-    <div class="treino">
+
+    <section>
+     <div id="treino">
         <h2>Informações de Treino</h2>
 
         <label for="experiencia">Qual o seu nível de experiência?</label>
@@ -111,8 +125,13 @@
         <label for="observacao">Alguma observação adicional que gostaria de deixar para a organização?</label>
         <input type="observacao" id="observacaoid" placeholder="Digite..." name="observacao"/>
         <br>
-    </div>
+     </div>
+    </section>
+        <div id="botao">
         <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
-      </form>
+        </div>
+  </form>
+</Main>
+
 </body>
 </html>
